@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora versión alterna</title>
+
+    <!-- links css -->
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css.css">
+
+    <!-- links de fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@600&family=Pacifico&family=Quicksand:wght@300;500;600;700&family=Roboto:wght@400;500&family=Rubik:wght@300;400&family=Sassy+Frass&family=Tilt+Neon&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="appCalculadora">
+        <form name="Calculadora">
+            <input type="textfield" name="respuesta" value="" autocomplete="off" readonly >
+            <!-- Input nos indica el tipo de texto que tendremos, el name es para indicar que esta es la sección de la respuesta, valor es igual a cero,
+            autocomplete es porque no queremos que haya nada externo a las funciones de los botones en este espacio y el readonly es porque no podemos
+            modificar lo que hay adentro de este cuadro de respuestas-->
+            <div class="teclado">
+                <input class="App66" type="reset" value="AC">
+                <input class="App66" type="button" value="+/-">
+                <input class="App66" type="button" value="%" onclick="document.Calculadora.respuesta.value+='%'">
+                <input class="App55" type="button" value="/" onclick="document.Calculadora.respuesta.value+='/'">
+                <input class="Apptecla" type="button" value="7" onclick="document.Calculadora.respuesta.value+='7'">
+                <input class="Apptecla" type="button" value="8" onclick="document.Calculadora.respuesta.value+='8'">
+                <input class="Apptecla" type="button" value="9" onclick="document.Calculadora.respuesta.value+='9'">
+                <input class="App55" type="button" value="X" onclick="document.Calculadora.respuesta.value+='*'">
+                <input class="Apptecla" type="button" value="4" onclick="document.Calculadora.respuesta.value+='4'">
+                <input class="Apptecla" type="button" value="5" onclick="document.Calculadora.respuesta.value+='5'">
+                <input class="Apptecla" type="button" value="6" onclick="document.Calculadora.respuesta.value+='6'">
+                <input class="App55" type="button" value="-" onclick="document.Calculadora.respuesta.value+='-'">
+                <input class="Apptecla" type="button" value="1" onclick="document.Calculadora.respuesta.value+='1'">
+                <input class="Apptecla" type="button" value="2" onclick="document.Calculadora.respuesta.value+='2'">
+                <input class="Apptecla" type="button" value="3" onclick="document.Calculadora.respuesta.value+='3'">
+                <input class="App55" type="button" value="+" onclick="document.Calculadora.respuesta.value+='+'">
+                <input class="App0" type="button" value="0" onclick="document.Calculadora.respuesta.value+='0'">
+                <input class="Apptecla" type="button" value="," onclick="document.Calculadora.respuesta.value+='.'">
+                <input class="App55" type="button" value="=" onclick="document.Calculadora.respuesta.value=eval(document.Calculadora.respuesta.
+                value)">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

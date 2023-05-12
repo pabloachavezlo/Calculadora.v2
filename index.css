@@ -1,0 +1,97 @@
+body {
+    height: 550px;
+    width: 250px;
+    margin: 5rem 5rem;
+    box-shadow: 15px 15px 8px gray;
+    max-width: 400px;
+}
+
+.appCalculadora {
+    height: 550px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.appCalculadora > form {
+    height: 100%;
+    width: 100%;
+    background-color: var(---color1);
+}
+
+.appCalculadora input[type=textfield]{
+    width: 85%;
+    margin-top: 3rem;
+    margin-left: 1.2rem;
+    height: 20%;
+
+    background-color: var(---color3);
+    padding: 15px;
+    text-align: right;
+    font-size: 35px;
+    border-radius: 10px;
+    outline: none;
+    cursor: default;
+}
+
+.teclado {
+    width: 220px;
+    height: 280px;
+    display: grid;
+    margin: auto;
+    margin-top: 2rem;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0.3rem;
+}
+
+.teclado > input[type=button], input[type=reset] {
+    outline: none;
+}
+
+.teclado > .Apptecla {
+    background-color: var(---color5);
+    color: var(---color3);
+    border-radius: 0.5rem;
+}
+.Apptecla:hover {
+    background-color:  rgb(12, 10, 10);
+}
+
+
+.teclado > .App66 {
+    background-color: var(---color2);
+    color: var(---color3);
+    border-radius: 0.5rem;
+}
+.App66:hover {
+    background-color: rgb(100, 98, 98);
+    cursor: pointer;
+}
+
+
+.teclado > .App55 {
+    background-color: var(---color4);
+    color: var(---color3);
+    border-radius: 0.5rem;
+}
+.App55:hover {
+    background-color: rgb(193, 130, 12);
+    cursor: pointer;
+}
+
+
+.teclado > .App0 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: red;
+    outline: none;
+    border-radius: 0.5rem;
+    color: var(---color3);
+}
+.App0:hover {
+    background-color: brown;
+    cursor: pointer;
+}
